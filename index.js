@@ -4,7 +4,9 @@ import cors from 'cors';
 import 'dotenv/config';
 
 const app = express();
-app.use(cors());
+app.use(cors({
+    origin: "https://6638537ed79e9e6a4051f20f--silver-axolotl-635802.netlify.app"
+}));
 app.use(express.json())
 
 const dbURL = process.env.dbURL;
